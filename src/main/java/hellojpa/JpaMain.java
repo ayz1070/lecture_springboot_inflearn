@@ -19,7 +19,9 @@ public class JpaMain {
 
             em.persist(member);
 
-            em.flush();
+            member.setName("AAAAAA");
+
+            em.detach(member);
 
             System.out.println("==========================");
 
