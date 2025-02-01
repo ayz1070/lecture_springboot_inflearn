@@ -9,9 +9,17 @@ import lombok.Setter;
 @Getter @Setter
 public class Member {
 
+    public Member(Long id, String name) {
+        this.id = id;
+        this.name = name;
+    }
+
     @Id
     private Long id;
     private String name;
 
 
+    public Member() {
+
+    }
 }
