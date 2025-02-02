@@ -15,16 +15,7 @@ public class JpaMain {
         tx.begin();
 
         try{
-            Member member = new Member(200L,"member200");
-
-            em.persist(member);
-
-            member.setName("AAAAAA");
-
-            em.clear();
-
-
-            System.out.println("==========================");
+            Member member = new Member();
 
             tx.commit();
         }catch (Exception e){
