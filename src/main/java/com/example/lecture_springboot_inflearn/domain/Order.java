@@ -15,9 +15,14 @@ public class Order {
 //    @Column(name="MEMBER_ID")
 //    private Long memberId;
 
+    ///  외래키는 N 쪽에
     @ManyToOne
     @JoinColumn(name="MEMBER_ID")
     private Member member;
+
+    @OneToOne
+    @JoinColumn(name = "DELIVERY_ID")
+    private Delivery delivery;
 
     @OneToMany(mappedBy = "order")
     private List<OrderItem> orderItems = new ArrayList<>();
