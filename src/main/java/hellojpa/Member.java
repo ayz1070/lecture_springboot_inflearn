@@ -10,8 +10,10 @@ import java.util.Date;
 
 @Entity
 @Getter @Setter
+//@SequenceGenerator(name = "member_seq_generator", sequenceName = "member_seq")
 public class Member {
     @Id
+    @GeneratedValue(strategy = GenerationType.SEQUENCE)
     private Long id;
 
     @Column(name="name", insertable = true, updatable = true, nullable = false, columnDefinition = "varchar(100) default='EMPTY'")
