@@ -12,8 +12,6 @@ public class Order {
     @Id @GeneratedValue
     private Long id;
 
-//    @Column(name="MEMBER_ID")
-//    private Long memberId;
 
     ///  외래키는 N 쪽에
     @ManyToOne
