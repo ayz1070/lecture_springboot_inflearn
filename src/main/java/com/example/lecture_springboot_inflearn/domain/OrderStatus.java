@@ -1,5 +1,5 @@
 package com.example.lecture_springboot_inflearn.domain;
 
 enum OrderStatus {
-    PURCHASED,DELIVERED
+    PURCHASED,DELIVERING,DELIVERED
 }
